@@ -2,16 +2,53 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>oop</title>
+    <title>Avakuva aplikatsioon</title>
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta
-      http-equiv="Content-Security-Policy"
       content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'"
     />
   </head>
-  
+
   <body>
+
+    <canvas id="canvas" width="500" height="500"></canvas>
+
     <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="src/main.js"></script>
   </body>
 </html>
+
+<style>
+
+  /*Siit on veel katki, palun parandada :D*/
+
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background: url(https://wallpapers.com/images/featured/alice-in-wonderland-khb1bmkt53kb4222.jpg) no-repeat center center fixed;
+    background-size: cover;
+    gap: 2rem;
+    font-family: Helvetica;
+  }
+
+  header {
+    display: block;
+  }
+
+  body{
+  margin:0px;  
+  width:100%;
+  height:500px;  
+  background: rgba(51, 51, 86, 0.713);
+  background: radial-gradient(circle, rgba(52,52,90,1) 0%, rgb(36, 36, 9) 100%);
+  }
+
+  canvas{
+  position:absolute;
+  left:calc(50% - 250px); 
+  }
+</style>
